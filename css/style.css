@@ -1,0 +1,115 @@
+/*Configurações Globais*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Trirong", serif;
+    background-image: linear-gradient(to left, #E09200, #FA8500, #ED630C);
+    color: white;
+    min-height: 100vh;
+}
+
+header, #input-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+form #todo,
+form #todo-button{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    background: white;
+}
+
+form #todo-button{
+    color: #ff5d31;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form #todo-button:hover{
+    background: #ff5d31;
+    color: white;
+}
+
+/*TODO-LIST*/
+.todo-itens-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    list-style: none;
+}
+
+.todo-item{
+    margin: 0.1rem;
+    padding: 8px;
+    border-radius: 5px;
+    background: #E09200;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: all 0.5s ease;
+
+    /* transition: all 0.5s ease
+    background-color: white;
+    color: black;
+    padding: 5px;
+    width: 15%; */
+}
+
+.todo-item li {
+    flex: 1;
+}
+
+.complete-btn, .trash-btn{
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.complete-btn{
+    background: forestgreen;
+}
+
+.complete-btn:hover{
+    background: green;
+    color: white;
+}
+
+.trash-btn{
+    background: tomato;
+}
+
+.trash-btn:hover{
+    background: red;
+    color: white;
+}
+
+/*
+    Complete & Delete Function
+*/
+
+.fa-trash, .fa-check {
+    pointer-events: none; /*Esse é necessário para remover os eventos do ícone e deixar apenas por conta dos botões completed-btn e trash-btn*/
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
