@@ -113,3 +113,8 @@ form #todo-button:hover{
     text-decoration: line-through;
     opacity: 0.5;
 }
+
+.pending{
+    text-decoration: none;
+    opacity: unset;
+}
